@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './index.css';
+import {connect} from 'react-redux';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 
@@ -8,10 +9,17 @@ class App extends Component {
     return (
       <div className="App">
         <Header/>
+        {this.props.user}
         <Footer/>
       </div>
     );
   }
 }
 
-export default App;
+const mapStateToProps = (state) => {
+  return {
+    user: state.user
+  }
+}
+
+export default connect(mapStateToProps)(App)
