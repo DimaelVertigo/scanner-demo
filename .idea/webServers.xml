@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="5f3b6da0-17c2-4e31-8e37-1184b2d20c49" name="demo-dev" url="http://lws.dev.cww.comodo.od.ua/ui">
+        <fileTransfer host="lws.dev.cww.comodo.od.ua" port="22" accessType="SFTP" authAgent="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
